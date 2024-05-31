@@ -18,3 +18,7 @@ export function tagUserInfoCreate() {
 export function tagUserInfoRemove() {
   OneSignal.User.removeTags(['user_name', 'user_email']);
 }
+
+export function tagCarUpdate(itemCount: string) {
+  OneSignal.User.addTag('cart_items_count', itemCount);
+}
